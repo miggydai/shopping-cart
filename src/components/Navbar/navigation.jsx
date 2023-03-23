@@ -44,16 +44,11 @@ function Navigation({ cart, setCart, handleChange }) {
   return (
     <>
       <Navbar bg="light" expand="lg" sticky="top">
-        <Container>
-          <Col>
-            <Navbar.Brand href="#home">shop</Navbar.Brand>
-          </Col>
-          <Col xs={7}></Col>
-          <Col>
-            <Nav className="me-auto" navbarScroll>
-              <Button onClick={handleDrawerOpen}>Cart</Button>
-            </Nav>
-          </Col>
+        <Container className="justify-content-between">
+          <Navbar.Brand href="#home">
+            <span>shop</span>
+          </Navbar.Brand>
+          <Button onClick={handleDrawerOpen}>Cart </Button>
         </Container>
       </Navbar>
 
@@ -113,7 +108,7 @@ function Navigation({ cart, setCart, handleChange }) {
           </Table>
           <div className="total">
             <span>Total</span>
-            <span>Php - {price}</span>
+            <span>Php {price}</span>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
