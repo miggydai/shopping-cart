@@ -16,3 +16,19 @@
   align-items: left;
   margin: 3px;
 }
+
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.quan {
+  display: flex;
+  flex-direction: row;
+}

@@ -33,7 +33,7 @@ function Navigation({ cart, setCart, handleChange }) {
 
   const handlePrice = () => {
     let ans = 0;
-    cart.map((item) => (ans += item.amount * item.price));
+    cart.map((item) => (ans += item.quantity * item.price));
     setPrice(ans);
   };
 
@@ -57,6 +57,7 @@ function Navigation({ cart, setCart, handleChange }) {
         </Container>
       </Navbar>
 
+      {/* right drawer */}
       <Offcanvas show={isDrawerOpen} onHide={handleDrawerClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Your Cart</Offcanvas.Title>
@@ -77,11 +78,31 @@ function Navigation({ cart, setCart, handleChange }) {
                 <tr>
                   <td>{item.name}</td>
                   <td>{item.brand}</td>
-                  <td>quantity</td>
+                  <td className="quan">
+                    <Button
+                      size="sm"
+                      variant="success"
+                      onClick={() => handleChange(item, 1)}
+                    >
+                      +
+                    </Button>
+                    <Button size="sm" variant="secondary">
+                      {item.quantity}
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="warning"
+                      onClick={() => handleChange(item, -1)}
+                    >
+                      -
+                    </Button>
+                  </td>
                   <td>{item.price}</td>
-                  {/* <td>{props.}</td> */}
                   <td>
-                    <Button onClick={() => handleRemove(item.id)}>
+                    <Button
+                      variant="outline-danger"
+                      onClick={() => handleRemove(item.id)}
+                    >
                       {" "}
                       Remove{" "}
                     </Button>
@@ -90,7 +111,10 @@ function Navigation({ cart, setCart, handleChange }) {
               ))}
             </tbody>
           </Table>
-          <span>Rs - {price}</span>
+          <div className="total">
+            <span>Total</span>
+            <span>Php - {price}</span>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>

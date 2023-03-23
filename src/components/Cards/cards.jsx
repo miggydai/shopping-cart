@@ -29,7 +29,9 @@ function Cards({ items, handleClick }) {
             <Button onClick={add}>+</Button>
           </div> */}
           <br />
-          <Button onClick={() => handleClick(items)}>add to cart</Button>
+          <Button variant="outline-success" onClick={() => handleClick(items)}>
+            add to cart
+          </Button>
         </div>
       </div>
     </>

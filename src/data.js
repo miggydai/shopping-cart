@@ -7,6 +7,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ const sneakers = [
     colorway: "White/White",
     price: 9000,
     image:
-      "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+      " quantity: 1,https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const sneakers = [
     price: 9000,
     image:
       "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+    quantity: 1,
   },
 ];
 
