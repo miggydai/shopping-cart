@@ -1,10 +1,18 @@
 import React from "react";
-import { useState } from "react";
-import { Navbar, Nav, Button, Offcanvas, Row, Col } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import {
+  Navbar,
+  Nav,
+  Button,
+  Offcanvas,
+  Row,
+  Col,
+  Table,
+} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "./navigation.css";
 
-function Navigation() {
+function Navigation({ cart, setCart, handleChange }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -14,6 +22,24 @@ function Navigation() {
   const handleDrawerClose = () => {
     setIsDrawerOpen(false);
   };
+
+  const [price, setPrice] = useState(0);
+
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
+    handlePrice();
+  };
+
+  const handlePrice = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.price));
+    setPrice(ans);
+  };
+
+  useEffect(() => {
+    handlePrice();
+  });
 
   return (
     <>
@@ -36,7 +62,35 @@ function Navigation() {
           <Offcanvas.Title>Your Cart</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <h5>Drawer Content Goes Here</h5>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cart.map((item) => (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>{item.brand}</td>
+                  <td>quantity</td>
+                  <td>{item.price}</td>
+                  {/* <td>{props.}</td> */}
+                  <td>
+                    <Button onClick={() => handleRemove(item.id)}>
+                      {" "}
+                      Remove{" "}
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+          <span>Rs - {price}</span>
         </Offcanvas.Body>
       </Offcanvas>
     </>

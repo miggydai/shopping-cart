@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./cards.css";
 
-function Cards(props) {
+function Cards({ items, handleClick }) {
+  const { id, name, brand, price, image } = items;
   const [quantity, setQuantity] = useState(0);
 
   const add = () => {
@@ -16,19 +17,19 @@ function Cards(props) {
   return (
     <>
       <div className="cards">
-        <img src={props.image} alt={props.alt} className="card-img" />
+        <img src={image} alt="shoe" className="card-img" />
         <div className="card-info">
-          <h3>{props.name}</h3>
-          <h5>{props.brand}</h5>
-          <p>Php {props.price}</p>
+          <h3>{name}</h3>
+          <h5>{brand}</h5>
+          <p>Php {price}</p>
 
-          <div className="quantity">
+          {/* <div className="quantity">
             <Button onClick={subtract}>-</Button>
             {quantity}
             <Button onClick={add}>+</Button>
-          </div>
-
-          <Button>add to cart</Button>
+          </div> */}
+          <br />
+          <Button onClick={() => handleClick(items)}>add to cart</Button>
         </div>
       </div>
     </>
