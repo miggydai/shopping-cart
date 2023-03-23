@@ -6,11 +6,8 @@ function Banner() {
   return (
     <>
       <section id="hero" className="banner">
-        <h1>Welcome to My Landing Page</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h1>Welcome</h1>
+        <p>a small shop</p>
       </section>
     </>
   );

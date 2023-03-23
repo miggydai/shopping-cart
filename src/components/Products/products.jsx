@@ -7,6 +7,7 @@ function Products({ handleClick }) {
   return (
     <>
       <h2>Products</h2>
+
       <section id="features" className="products">
         {sneakers.map((e) => (
           <Cards key={e.id} items={e} handleClick={handleClick} />
