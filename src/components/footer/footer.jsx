@@ -6,8 +6,8 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="container">
-          <span>made by: megmeg</span>
-          <span>2023</span>
+          <span>made by megmeg</span>
+          <span>@ 2023</span>
         </div>
       </footer>
     </>

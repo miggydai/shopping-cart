@@ -13,8 +13,8 @@ function Products({ handleClick }) {
         {sneakers.map((e) => (
           <Cards key={e.id} items={e} handleClick={handleClick} />
         ))}
+        <Footer />
       </section>
-      <Footer />
     </>
   );
 }

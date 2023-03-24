@@ -26,7 +26,7 @@ const sneakers = [
     colorway: "White/White",
     price: 9000,
     image:
-      "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+      "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/585e2cd2-4f2a-408c-a8ba-f89952cdf332/revolution-6-next-nature-road-running-shoes-NC0P7k.png",
     quantity: 1,
   },
   {
@@ -36,7 +36,7 @@ const sneakers = [
     colorway: "White/White",
     price: 9000,
     image:
-      " quantity: 1,https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-WrLlWX.png",
+      "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/585e2cd2-4f2a-408c-a8ba-f89952cdf332/revolution-6-next-nature-road-running-shoes-NC0P7k.png",
     quantity: 1,
   },
   {

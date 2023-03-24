@@ -74,7 +74,7 @@ function Navigation({ cart, setCart, handleChange }) {
             </thead>
             <tbody>
               {cart.map((item) => (
-                <tr>
+                <tr key={item.id}>
                   <td>{item.name}</td>
                   <td>{item.brand}</td>
                   <td className="quan">
