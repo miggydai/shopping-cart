@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Banner from "./components/Banner/banner";
 import Products from "./components/Products/products";
+import Footer from "./components/footer/footer";
 
 function App() {
   const [cart, setCart] = useState([]);

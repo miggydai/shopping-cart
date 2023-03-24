@@ -1,3 +1,5 @@
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState, useEffect } from "react";
 import {
@@ -48,7 +50,9 @@ function Navigation({ cart, setCart, handleChange }) {
           <Navbar.Brand href="#home">
             <span>shop</span>
           </Navbar.Brand>
-          <Button onClick={handleDrawerOpen}>Cart </Button>
+          <Button variant="outline-success" onClick={handleDrawerOpen}>
+            <FontAwesomeIcon icon={faCartShopping} />
+          </Button>
         </Container>
       </Navbar>
 

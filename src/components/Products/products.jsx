@@ -1,6 +1,7 @@
 import React from "react";
 import sneakers from "../../data";
 import Cards from "../Cards/cards";
+import Footer from "../footer/footer";
 import "./products.css";
 
 function Products({ handleClick }) {
@@ -13,6 +14,7 @@ function Products({ handleClick }) {
           <Cards key={e.id} items={e} handleClick={handleClick} />
         ))}
       </section>
+      <Footer />
     </>
   );
 }
