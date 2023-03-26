@@ -2,15 +2,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState, useEffect } from "react";
-import {
-  Navbar,
-  Nav,
-  Button,
-  Offcanvas,
-  Row,
-  Col,
-  Table,
-} from "react-bootstrap";
+import { Navbar, Button, Offcanvas, Table } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "./navigation.css";
 

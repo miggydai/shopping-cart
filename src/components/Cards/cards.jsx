@@ -4,15 +4,6 @@ import "./cards.css";
 
 function Cards({ items, handleClick }) {
   const { id, name, brand, price, image } = items;
-  const [quantity, setQuantity] = useState(0);
-
-  const add = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const subtract = () => {
-    setQuantity(quantity - 1);
-  };
 
   return (
     <>
