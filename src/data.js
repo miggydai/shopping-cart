@@ -149,6 +149,59 @@ const sneakers = [
       "https://lzd-img-global.slatic.net/g/p/aeaff4091bfd88688ce70eae00481a6a.jpg_720x720q80.jpg_.webp",
     quantity: 1,
   },
+  {
+    id: 15,
+    name: "Nike sb dunks panda",
+    brand: "Nike",
+    category: "shoes",
+    colorway: "White/White",
+    price: 9000,
+    image:
+      "https://dynamic.zacdn.com/9x7G3RLBkSKi47nMpklQXxvQlb8=/fit-in/346x500/filters:quality(95):fill(ffffff)/https://static-ph.zacdn.com/p/nike-7964-2825281-1.jpg",
+    quantity: 1,
+  },
+  {
+    id: 16,
+    name: "baggy sweat pants",
+    brand: "Nike",
+    category: "pants",
+    colorway: "White/White",
+    price: 9000,
+    image: "https://cf.shopee.ph/file/d2d072fae469b4d8641438d3da70e86a",
+    quantity: 1,
+  },
+  {
+    id: 17,
+    name: "Black Pants",
+    brand: "Nike",
+    category: "pants",
+    colorway: "White/White",
+    price: 9000,
+    image:
+      "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/450280/sub/goods_450280_sub14.jpg?width=750",
+    quantity: 1,
+  },
+  {
+    id: 18,
+    name: "Hoodie",
+    brand: "Nike",
+    category: "Hoodie",
+    colorway: "White/White",
+    price: 9000,
+    image: "https://i.ebayimg.com/images/g/K~8AAOSwTgVhg8sO/s-l400.jpg",
+    quantity: 1,
+  },
+  {
+    id: 19,
+    name: "Hoodie",
+    brand: "Nike",
+    category: "Hoodie",
+    colorway: "White/White",
+    price: 9000,
+    image:
+      "https://lzd-img-global.slatic.net/g/p/aeaff4091bfd88688ce70eae00481a6a.jpg_720x720q80.jpg_.webp",
+    quantity: 1,
+  },
 ];
 
 export default sneakers;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Form, FormControl, Row } from "react-bootstrap";
+import { Button, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import sneakers from "../../data";
 import Cards from "../Cards/cards";
 import Footer from "../footer/footer";
@@ -28,9 +28,8 @@ function Products({ handleClick }) {
       <div className="header">
         <h2>Products</h2>
 
-        <Form className="search-form row">
-          {/* <div className="row"> */}
-          <Row>
+        <Form className="search-form">
+          <InputGroup className="mb-3">
             <FormControl
               type="text"
               placeholder="Search Items"
@@ -40,8 +39,7 @@ function Products({ handleClick }) {
             <Button size="sm" onClick={handleSearch} variant="outline-info">
               Search
             </Button>
-          </Row>
-          {/* </div> */}
+          </InputGroup>
         </Form>
       </div>
 
