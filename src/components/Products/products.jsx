@@ -33,7 +33,7 @@ function Products({ handleClick }) {
           <Row>
             <FormControl
               type="text"
-              placeholder="Search sneakers"
+              placeholder="Search Items"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

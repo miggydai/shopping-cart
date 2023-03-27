@@ -28,9 +28,8 @@ h2 {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0 5px;
 }
 
 .row {
