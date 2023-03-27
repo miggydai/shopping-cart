@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Banner from "./components/Banner/banner";
 import Products from "./components/Products/products";
+import { Form, FormControl } from "react-bootstrap";
 
 const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart"));
 function App() {
@@ -33,6 +34,7 @@ function App() {
     arr[ind].quantity += d;
 
     if (arr[ind].quantity === 0) {
+      arr[ind].quantity = 1;
       arr.splice(ind, 1);
     }
     setCart([...arr]);
