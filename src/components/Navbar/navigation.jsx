@@ -6,7 +6,7 @@ import { Navbar, Button, Offcanvas, Table } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "./navigation.css";
 
-function Navigation({ cart, setCart, handleChange }) {
+function Navigation({ cart, setCart, handleChange, size }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -44,6 +44,7 @@ function Navigation({ cart, setCart, handleChange }) {
           </Navbar.Brand>
           <Button variant="outline-success" onClick={handleDrawerOpen}>
             <FontAwesomeIcon icon={faCartShopping} />
+            <span>{size}</span>
           </Button>
         </Container>
       </Navbar>

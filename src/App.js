@@ -41,7 +41,12 @@ function App() {
 
   return (
     <React.Fragment>
-      <Navigation cart={cart} setCart={setCart} handleChange={handleChange} />
+      <Navigation
+        cart={cart}
+        setCart={setCart}
+        handleChange={handleChange}
+        size={cart.length}
+      />
       <Banner />
       <Products handleClick={handleClick} />
     </React.Fragment>
